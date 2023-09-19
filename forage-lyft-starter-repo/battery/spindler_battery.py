@@ -16,4 +16,4 @@ class SpindlerBattery(Car, ABC):
         # this is the older version of the spindler battery service
         # new Spindler battery requirement changes to 3 years per service
         # service_theshold_date = self.last_service_date.replace(year=self.last_service_date.year+3)
-        return self.last_service_date.year - self.current_date.year >= 2
+        return self.last_service_date.year - self.current_date.year >= 3
